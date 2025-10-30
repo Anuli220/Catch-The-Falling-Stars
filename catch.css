@@ -1,0 +1,73 @@
+ body {
+     background-color: midnightblue;
+     color: white;
+     font-family: 'Segoe UI', sans-serif;
+     justify-content: center;
+     padding: 20px;
+ }
+
+ h1 {
+     margin-bottom: 10px;
+ }
+
+ #game-area {
+     width: 50px;
+     height: 50px;
+     background-color: midnightblue;
+     border: none;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .basket {
+     width: 20px;
+     height: 20px;
+     color: goldenrod;
+     position: absolute;
+     bottom: 30px;
+     left: 10px;
+     border-radius: 2rem;
+ }
+
+ .star {
+     width: 10px;
+     height: 10px;
+     color: gold;
+     border-radius: 10rem;
+     position: absolute;
+     top: 0;
+ }
+
+ button {
+     padding: 50px;
+     margin: 50px;
+     font-size: 40px;
+     background-color: crimson;
+     color: white;
+ }
+
+ button:hover {
+     background-color: rgb(133, 26, 26);
+     scale: 20px;
+ }
+
+ button:disabled {
+     background: grey;
+     cursor: none;
+     scale: none;
+ }
+
+ #score {
+     font-size: 40px;
+     margin: 10px;
+ }
+
+ #lives {
+     font-size: 40px;
+ }
+
+ #message {
+     font-size: 40px;
+     color: white;
+     margin-top: 20px;
+ }
