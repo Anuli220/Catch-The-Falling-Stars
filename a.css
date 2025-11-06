@@ -1,100 +1,98 @@
-    body {
-      background-color: midnightblue;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      justify-content: center;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
+ body {
+     background-color: midnightblue;
+     color: white;
+     font-family: 'Segoe UI', sans-serif;
+     justify-content: center;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
 
-    h1 {
-      margin-bottom: 10px;
-    }
+ h1 {
+     margin-bottom: 10px;
+ }
 
-    /* Game area */
-    #game-area {
-      width: 360px;
-      height: 500px;
-      background-color: black;
-      border: 3px solid gold;
-      position: relative;
-      overflow: hidden;
-      margin: 20px auto;
-      border-radius: 8px;
-    }
+ #game-area {
+     width: 360px;
+     height: 500px;
+     background-color: rgb(0, 0, 0);
+     border: 3px solid gold;
+     position: relative;
+     overflow: hidden;
+     margin: 20px auto;
+     border-radius: 8px;
+ }
 
-    /* Basket styling */
-    .basket {
-      width: 100px;
-      height: 20px;
-      background-color: goldenrod;
-      position: absolute;
-      bottom: 10px;
-      left: 130px;
-      border-radius: 10px;
-    }
+ .basket {
+     width: 100px;
+     height: 20px;
+     color: goldenrod;
+     position: absolute;
+     bottom: 30px;
+     left: 10px;
+     border-radius: 10px;
+     background-color: goldenrod;
+ }
 
-    /* Star styling */
-    .star {
-      width: 30px;
-      height: 30px;
-      background-color: gold;
-      border-radius: 50%;
-      position: absolute;
-      top: 0;
-    }
+ .star {
+     width: 30px;
+     height: 30px;
+     background-color: gold;
+     border-radius: 50%;
+     position: absolute;
+     top: 0;
+ }
 
-    /* Button styles */
-    button {
-      padding: 10px 20px;
-      cursor: pointer;
-      margin: 5px;
-      font-size: 16px;
-      background-color: crimson;
-      color: white;
-      border-radius: 10px;
-      border: none;
-      transition: transform 0.15s ease, background 0.15s ease;
-    }
+ button {
+     padding: 10px 20px;
+     cursor: pointer;
+     margin: 5px;
+     font-size: 16px;
+     background-color: crimson;
+     color: white;
+     border-radius: 10px;
+     border: none;
+     transition: transform 0.15s ease, background 0.15s ease;
+ }
 
-    button:hover:not(:disabled) {
-      background-color: rgb(133, 26, 26);
-      transform: scale(1.05);
-    }
 
-    button:disabled {
-      background: grey;
-      cursor: not-allowed;
-      transform: none;
-    }
+ button:hover:not(:disabled) {
+     background-color: rgb(133, 26, 26);
+     transform: scale(1.05);
+ }
 
-    #score, #lives {
-      font-size: 22px;
-      margin: 10px;
-    }
+ button:disabled {
+     background: grey;
+     cursor: not-allowed;
+     transform: none;
+ }
 
-    #message {
-      font-size: 24px;
-      color: gold;
-      margin-top: 10px;
-    }
+ #score, #lives {
+     font-size: 22px;
+     margin: 10px;
+ }
 
-    /* Responsive adjustments */
-    @media (max-width: 400px) {
-      #game-area {
+
+ #message {
+     font-size: 24px;
+     color: gold;
+     margin-top: 10px;
+ }
+
+ @media (max-width: 400px) {
+    .game-area{
         width: 300px;
         height: 450px;
-      }
+    }
 
-      .basket {
+    .basket{
         width: 80px;
         left: 110px;
-      }
+    }
 
-      .star {
+    .star{
         width: 25px;
         height: 25px;
-      }
     }
+ }
